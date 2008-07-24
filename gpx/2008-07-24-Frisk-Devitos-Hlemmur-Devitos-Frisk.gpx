@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+ version="1.0"
+creator="GPSBabel - http://www.gpsbabel.org"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2008-07-24T17:45:21Z</time>
+<bounds minlat="64.113413896" minlon="-21.916265739" maxlat="64.145470150" maxlon="-21.871639984"/>
+<wpt lat="64.143253136" lon="-21.913907072">
+  <ele>17.910156</ele>
+  <name>018</name>
+  <cmt>24-JUL-08 16:40:33</cmt>
+  <desc>24-JUL-08 16:40:33</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.143331926" lon="-21.914190883">
+  <ele>19.111816</ele>
+  <name>019</name>
+  <cmt>24-JUL-08 16:40:47</cmt>
+  <desc>24-JUL-08 16:40:47</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.143420691" lon="-21.914376374">
+  <ele>18.871460</ele>
+  <name>020</name>
+  <cmt>24-JUL-08 16:40:59</cmt>
+  <desc>24-JUL-08 16:40:59</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.143110896" lon="-21.914814245">
+  <ele>18.631104</ele>
+  <name>021</name>
+  <cmt>24-JUL-08 16:41:23</cmt>
+  <desc>24-JUL-08 16:41:23</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.143011235" lon="-21.914875768">
+  <ele>18.871460</ele>
+  <name>022</name>
+  <cmt>24-JUL-08 16:41:38</cmt>
+  <desc>24-JUL-08 16:41:38</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.143277528" lon="-21.914810641">
+  <ele>20.313354</ele>
+  <name>023</name>
+  <cmt>24-JUL-08 16:44:52</cmt>
+  <desc>24-JUL-08 16:44:52</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<trk>
+  <name>ACTIVE LOG #4</name>
+<number>3</number>
+<trkseg>
+<trkpt lat="64.141208120" lon="-21.913824258">
+  <ele>18.402344</ele>
+<time>2008-07-24T16:34:30Z</time>
+</trkpt>
+<trkpt lat="64.141208120" lon="-21.913824258">
+  <ele>16.960449</ele>
+<time>2008-07-24T16:35:16Z</time>
+</trkpt>
+<trkpt lat="64.141208120" lon="-21.913824258">
+  <ele>18.402344</ele>
+<time>2008-07-24T16:35:22Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #5</name>
+<number>4</number>
+<trkseg>
+<trkpt lat="64.142236328" lon="-21.912614834">
+  <ele>15.999023</ele>
+<time>2008-07-24T16:36:04Z</time>
+</trkpt>
+<trkpt lat="64.142411929" lon="-21.912614582">
+  <ele>17.441162</ele>
+<time>2008-07-24T16:36:16Z</time>
+</trkpt>
+<trkpt lat="64.142486360" lon="-21.912487932">
+  <ele>19.363770</ele>
+<time>2008-07-24T16:36:27Z</time>
+</trkpt>
+<trkpt lat="64.142444953" lon="-21.911638845">
+  <ele>18.883057</ele>
+<time>2008-07-24T16:36:46Z</time>
+</trkpt>
+<trkpt lat="64.142337162" lon="-21.911575980">
+  <ele>20.805664</ele>
+<time>2008-07-24T16:36:57Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #6</name>
+<number>5</number>
+<trkseg>
+<trkpt lat="64.142289385" lon="-21.911469279">
+  <ele>20.324951</ele>
+<time>2008-07-24T16:37:22Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #7</name>
+<number>6</number>
+<trkseg>
+<trkpt lat="64.143990660" lon="-21.916265739">
+  <ele>19.363770</ele>
+<time>2008-07-24T16:39:27Z</time>
+</trkpt>
+<trkpt lat="64.143985882" lon="-21.915891571">
+  <ele>17.921753</ele>
+<time>2008-07-24T16:39:38Z</time>
+</trkpt>
+<trkpt lat="64.143795194" lon="-21.915218672">
+  <ele>18.402344</ele>
+<time>2008-07-24T16:39:43Z</time>
+</trkpt>
+<trkpt lat="64.143321533" lon="-21.914122822">
+  <ele>18.402344</ele>
+<time>2008-07-24T16:39:57Z</time>
+</trkpt>
+<trkpt lat="64.143304853" lon="-21.914054174">
+  <ele>17.921753</ele>
+<time>2008-07-24T16:39:59Z</time>
+</trkpt>
+<trkpt lat="64.143127156" lon="-21.913424274">
+  <ele>16.960449</ele>
+<time>2008-07-24T16:40:08Z</time>
+</trkpt>
+<trkpt lat="64.143121289" lon="-21.913287817">
+  <ele>18.402344</ele>
+<time>2008-07-24T16:40:12Z</time>
+</trkpt>
+<trkpt lat="64.143282892" lon="-21.913614292">
+  <ele>16.960449</ele>
+<time>2008-07-24T16:40:22Z</time>
+</trkpt>
+<trkpt lat="64.143285491" lon="-21.913753431">
+  <ele>18.402344</ele>
+<time>2008-07-24T16:40:26Z</time>
+</trkpt>
+<trkpt lat="64.143281467" lon="-21.913838759">
+  <ele>17.921753</ele>
+<time>2008-07-24T16:40:29Z</time>
+</trkpt>
+<trkpt lat="64.143259255" lon="-21.913945964">
+  <ele>19.363770</ele>
+<time>2008-07-24T16:40:34Z</time>
+</trkpt>
+<trkpt lat="64.143299069" lon="-21.914077727">
+  <ele>19.363770</ele>
+<time>2008-07-24T16:40:41Z</time>
+</trkpt>
+<trkpt lat="64.143353635" lon="-21.914346283">
+  <ele>19.363770</ele>
+<time>2008-07-24T16:40:56Z</time>
+</trkpt>
+<trkpt lat="64.143394539" lon="-21.914380062">
+  <ele>18.883057</ele>
+<time>2008-07-24T16:40:58Z</time>
+</trkpt>
+<trkpt lat="64.143430497" lon="-21.914386936">
+  <ele>18.402344</ele>
+<time>2008-07-24T16:41:00Z</time>
+</trkpt>
+<trkpt lat="64.143336285" lon="-21.914659683">
+  <ele>18.883057</ele>
+<time>2008-07-24T16:41:10Z</time>
+</trkpt>
+<trkpt lat="64.143184489" lon="-21.914745094">
+  <ele>18.883057</ele>
+<time>2008-07-24T16:41:18Z</time>
+</trkpt>
+<trkpt lat="64.143141657" lon="-21.914795218">
+  <ele>18.883057</ele>
+<time>2008-07-24T16:41:21Z</time>
+</trkpt>
+<trkpt lat="64.143020036" lon="-21.914819526">
+  <ele>19.363770</ele>
+<time>2008-07-24T16:41:35Z</time>
+</trkpt>
+<trkpt lat="64.143023975" lon="-21.914941650">
+  <ele>19.844360</ele>
+<time>2008-07-24T16:41:48Z</time>
+</trkpt>
+<trkpt lat="64.142897995" lon="-21.914436556">
+  <ele>18.883057</ele>
+<time>2008-07-24T16:42:07Z</time>
+</trkpt>
+<trkpt lat="64.142931690" lon="-21.914763199">
+  <ele>19.363770</ele>
+<time>2008-07-24T16:42:34Z</time>
+</trkpt>
+<trkpt lat="64.142828761" lon="-21.914706789">
+  <ele>19.363770</ele>
+<time>2008-07-24T16:42:58Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #8</name>
+<number>7</number>
+<trkseg>
+<trkpt lat="64.142556768" lon="-21.915373737">
+  <ele>19.844360</ele>
+<time>2008-07-24T16:43:30Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #9</name>
+<number>8</number>
+<trkseg>
+<trkpt lat="64.143185243" lon="-21.914975261">
+  <ele>20.324951</ele>
+<time>2008-07-24T16:44:36Z</time>
+</trkpt>
+<trkpt lat="64.143137550" lon="-21.914683571">
+  <ele>21.286377</ele>
+<time>2008-07-24T16:45:09Z</time>
+</trkpt>
+<trkpt lat="64.143119361" lon="-21.914617270">
+  <ele>20.324951</ele>
+<time>2008-07-24T16:45:22Z</time>
+</trkpt>
+<trkpt lat="64.143033782" lon="-21.914208066">
+  <ele>20.324951</ele>
+<time>2008-07-24T16:45:35Z</time>
+</trkpt>
+<trkpt lat="64.143000590" lon="-21.914031543">
+  <ele>20.324951</ele>
+<time>2008-07-24T16:45:42Z</time>
+</trkpt>
+<trkpt lat="64.142950298" lon="-21.913892739">
+  <ele>20.324951</ele>
+<time>2008-07-24T16:45:48Z</time>
+</trkpt>
+<trkpt lat="64.142919956" lon="-21.913382951">
+  <ele>21.286377</ele>
+<time>2008-07-24T16:46:04Z</time>
+</trkpt>
+<trkpt lat="64.142881231" lon="-21.913011046">
+  <ele>22.247559</ele>
+<time>2008-07-24T16:46:18Z</time>
+</trkpt>
+<trkpt lat="64.142862372" lon="-21.912650038">
+  <ele>21.766968</ele>
+<time>2008-07-24T16:46:30Z</time>
+</trkpt>
+<trkpt lat="64.142880896" lon="-21.912699994">
+  <ele>24.170288</ele>
+<time>2008-07-24T16:46:40Z</time>
+</trkpt>
+<trkpt lat="64.142825827" lon="-21.912875175">
+  <ele>23.208984</ele>
+<time>2008-07-24T16:46:47Z</time>
+</trkpt>
+<trkpt lat="64.142882405" lon="-21.912704855">
+  <ele>23.689575</ele>
+<time>2008-07-24T16:47:04Z</time>
+</trkpt>
+<trkpt lat="64.142809063" lon="-21.913081957">
+  <ele>22.728271</ele>
+<time>2008-07-24T16:47:21Z</time>
+</trkpt>
+<trkpt lat="64.142729938" lon="-21.912836870">
+  <ele>22.247559</ele>
+<time>2008-07-24T16:47:37Z</time>
+</trkpt>
+<trkpt lat="64.142599348" lon="-21.912744250">
+  <ele>24.651001</ele>
+<time>2008-07-24T16:47:49Z</time>
+</trkpt>
+<trkpt lat="64.142535478" lon="-21.912695887">
+  <ele>24.170288</ele>
+<time>2008-07-24T16:47:54Z</time>
+</trkpt>
+<trkpt lat="64.142367924" lon="-21.912613325">
+  <ele>26.092896</ele>
+<time>2008-07-24T16:48:07Z</time>
+</trkpt>
+<trkpt lat="64.142125435" lon="-21.912737461">
+  <ele>25.612305</ele>
+<time>2008-07-24T16:48:24Z</time>
+</trkpt>
+<trkpt lat="64.141918486" lon="-21.912899148">
+  <ele>27.054321</ele>
+<time>2008-07-24T16:48:43Z</time>
+</trkpt>
+<trkpt lat="64.141646158" lon="-21.913038958">
+  <ele>27.534912</ele>
+<time>2008-07-24T16:49:04Z</time>
+</trkpt>
+<trkpt lat="64.141349355" lon="-21.913294774">
+  <ele>27.534912</ele>
+<time>2008-07-24T16:49:23Z</time>
+</trkpt>
+<trkpt lat="64.141217256" lon="-21.913354369">
+  <ele>27.534912</ele>
+<time>2008-07-24T16:49:32Z</time>
+</trkpt>
+<trkpt lat="64.141164869" lon="-21.913441541">
+  <ele>27.054321</ele>
+<time>2008-07-24T16:49:38Z</time>
+</trkpt>
+<trkpt lat="64.141155565" lon="-21.913449839">
+  <ele>26.092896</ele>
+<time>2008-07-24T16:49:39Z</time>
+</trkpt>
+<trkpt lat="64.141073339" lon="-21.913485546">
+  <ele>28.496216</ele>
+<time>2008-07-24T16:49:45Z</time>
+</trkpt>
+<trkpt lat="64.141045762" lon="-21.913450258">
+  <ele>27.054321</ele>
+<time>2008-07-24T16:49:49Z</time>
+</trkpt>
+<trkpt lat="64.141043164" lon="-21.913474230">
+  <ele>28.496216</ele>
+<time>2008-07-24T16:49:52Z</time>
+</trkpt>
+<trkpt lat="64.140922884" lon="-21.913362080">
+  <ele>28.976929</ele>
+<time>2008-07-24T16:49:57Z</time>
+</trkpt>
+<trkpt lat="64.140908802" lon="-21.913359482">
+  <ele>30.899536</ele>
+<time>2008-07-24T16:50:20Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>34.264160</ele>
+<time>2008-07-24T16:50:30Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #10</name>
+<number>9</number>
+<trkseg>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>34.264160</ele>
+<time>2008-07-24T16:50:31Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>36.186768</ele>
+<time>2008-07-24T16:51:04Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #11</name>
+<number>10</number>
+<trkseg>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>30.418823</ele>
+<time>2008-07-24T17:22:16Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>30.418823</ele>
+<time>2008-07-24T17:22:17Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>31.380127</ele>
+<time>2008-07-24T17:22:37Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>29.938110</ele>
+<time>2008-07-24T17:22:38Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #12</name>
+<number>11</number>
+<trkseg>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>29.938110</ele>
+<time>2008-07-24T17:22:39Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>28.496216</ele>
+<time>2008-07-24T17:23:21Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>30.418823</ele>
+<time>2008-07-24T17:23:22Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>28.496216</ele>
+<time>2008-07-24T17:23:25Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>30.418823</ele>
+<time>2008-07-24T17:23:30Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>28.015503</ele>
+<time>2008-07-24T17:23:33Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>30.418823</ele>
+<time>2008-07-24T17:23:34Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>28.496216</ele>
+<time>2008-07-24T17:23:46Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>28.496216</ele>
+<time>2008-07-24T17:23:47Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #13</name>
+<number>12</number>
+<trkseg>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>28.976929</ele>
+<time>2008-07-24T17:39:04Z</time>
+</trkpt>
+<trkpt lat="64.140906036" lon="-21.913351351">
+  <ele>28.976929</ele>
+<time>2008-07-24T17:39:05Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+  <name>ACTIVE LOG #14</name>
+<number>13</number>
+<trkseg>
+<trkpt lat="64.141037045" lon="-21.913488396">
+  <ele>28.496216</ele>
+<time>2008-07-24T17:39:21Z</time>
+</trkpt>
+<trkpt lat="64.140919195" lon="-21.913653435">
+  <ele>29.457520</ele>
+<time>2008-07-24T17:40:07Z</time>
+</trkpt>
+<trkpt lat="64.141108040" lon="-21.913670618">
+  <ele>28.015503</ele>
+<time>2008-07-24T17:40:29Z</time>
+</trkpt>
+<trkpt lat="64.141132263" lon="-21.913511530">
+  <ele>27.534912</ele>
+<time>2008-07-24T17:40:52Z</time>
+</trkpt>
+<trkpt lat="64.141160259" lon="-21.913488563">
+  <ele>27.534912</ele>
+<time>2008-07-24T17:41:21Z</time>
+</trkpt>
+<trkpt lat="64.141154559" lon="-21.913502226">
+  <ele>28.496216</ele>
+<time>2008-07-24T17:41:38Z</time>
+</trkpt>
+<trkpt lat="64.141164534" lon="-21.913405666">
+  <ele>28.496216</ele>
+<time>2008-07-24T17:42:03Z</time>
+</trkpt>
+<trkpt lat="64.141175346" lon="-21.913512954">
+  <ele>28.496216</ele>
+<time>2008-07-24T17:42:45Z</time>
+</trkpt>
+<trkpt lat="64.141163360" lon="-21.913477499">
+  <ele>28.496216</ele>
+<time>2008-07-24T17:43:57Z</time>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
