@@ -1,0 +1,101 @@
+#!/usr/bin/env perl
+use strict;
+use Getopt::Long ();
+use File::Slurp qw(slurp);
+use DateTime::Format::DateParse;
+use Image::ExifTool;
+use Image::ExifTool::Location;
+use Data::Dump 'dump';
+
+Getopt::Long::Parser->new(
+    config => [ qw< bundling no_ignore_case no_require_order pass_through > ],
+)->getoptions(
+    'h|help' => \my $help,
+    'range=i' => \(my $range = 60),
+    'offset=s' => \(my $offset = 0),
+) or help();
+
+my (@gpx, @img);
+
+for (@ARGV) {
+    if (/\.gpx$/i) {
+        push @gpx, $_;
+    } else {
+        push @img, $_;
+    }
+}
+
+print "Building point database from gpx files...";
+my %data = get_points_from_gpx(@gpx);
+print "done\n";
+
+for my $src (@img) {
+    my $exif = Image::ExifTool->new;
+
+    $exif->ExtractInfo($src);
+    my $date = $exif->GetValue('CreateDate');
+
+    my $dt = DateTime::Format::DateParse->parse_datetime( $date );
+    my $time = $dt->epoch;
+
+    my $start = $time + $offset - $range;
+    my $stop  = $time + $offset + $range;
+
+    my %diff;
+    for my $second ($start .. $stop) {
+        if (my $coord = $data{$second}) {
+            my $diff = abs $second - $time;
+
+            warn "OH MY FUCKING SHIT: $diff{$diff} already exists!" if $diff{$diff};
+            $diff{$diff} = $coord;
+        }
+    }
+
+    my $best_key = (sort { $a <=> $b } keys %diff)[0];
+    my $best = $diff{$best_key};
+
+    # Set location
+    $exif->SetLocation($best->{lat}, $best->{lon});
+    # Set elevation
+    $exif->SetElevation($best->{ele});
+
+    my $dst = $src; $dst =~ s/\./-geo./;
+    print "Saving $src with geodata as $dst\n";
+    $exif->WriteInfo($src, $dst);
+}
+
+sub get_points_from_gpx
+{
+    my @gpx = @_;
+    my %data;
+
+    for my $gpx (@gpx) {
+        my $cont = slurp($gpx);
+
+        my $rx = qr[
+                       <trkpt\ lat="(.*?)"\ lon="(.*?)"> \s*
+                       <ele>(.*?)</ele> \s*
+                       <time>(.*?)</time> \s*
+                       </trkpt>
+               ]xs;
+
+        while ($cont =~ /$rx/g) {
+            my $lat  = $1;
+            my $lon  = $2;
+            my $ele  = $3;
+            my $date = $4;
+
+            my $dt = DateTime::Format::DateParse->parse_datetime( $date );
+            my $time = $dt->epoch;
+
+            $data{$time} = {
+                lat => $lat,
+                lon => $lon,
+                ele => $ele,
+                date => $date,
+            };
+        }
+    }
+
+    return %data;
+}
