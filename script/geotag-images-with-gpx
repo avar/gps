@@ -46,7 +46,11 @@ for my $src (@img) {
         if (my $coord = $data{$second}) {
             my $diff = abs $second - $time;
 
-            warn "OH MY FUCKING SHIT: $diff{$diff} already exists!" if $diff{$diff};
+            if ($diff{$diff}) {
+                # This means we have a point e.g. -2 and +2, do
+                # something smart to pick either one rather than just
+                # the positive one.
+            }
             $diff{$diff} = $coord;
         }
     }
@@ -60,8 +64,9 @@ for my $src (@img) {
     $exif->SetElevation($best->{ele});
 
     my $dst = $src; $dst =~ s/\./-geo./;
-    print "Saving $src with geodata as $dst\n";
+    print "Saving $src with geodata as $dst, point offset by $best_key seconds\n";
     $exif->WriteInfo($src, $dst);
+    system "mv -v $dst $src";
 }
 
 sub get_points_from_gpx
@@ -99,3 +104,17 @@ sub get_points_from_gpx
 
     return %data;
 }
+
+__END__
+
+=item --offset
+
+How much needs to be added to your Camera's timestamp so that it syncs
+up with the GPS', obviously a negavite value can be specified.
+
+    $ exiftool *8289*jpg | grep ^Create
+    Create Date: 2008:07:30 13:07:03
+
+The image was actually taken at 13:07:08, so --offset=+5 needs to be
+specified.
+
