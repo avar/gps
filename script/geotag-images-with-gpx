@@ -58,6 +58,11 @@ for my $src (@img) {
     my $best_key = (sort { $a <=> $b } keys %diff)[0];
     my $best = $diff{$best_key};
 
+    unless ($best) {
+        warn "Could not find a gps point within $offset seconds for $src from the given gpx data";
+        next;
+    }
+
     # Set location
     $exif->SetLocation($best->{lat}, $best->{lon});
     # Set elevation
