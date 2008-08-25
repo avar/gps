@@ -59,7 +59,7 @@ for my $src (@img) {
     my $best = $diff{$best_key};
 
     unless ($best) {
-        warn "Could not find a gps point within $offset seconds for $src from the given gpx data";
+        warn "Could not find a gps point within $range seconds for $src from the given gpx data";
         next;
     }
 
