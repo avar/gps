@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+ version="1.0"
+creator="GPSBabel - http://www.gpsbabel.org"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2008-09-21T21:09:16Z</time>
+<bounds minlat="64.129104149" minlon="-21.872018594" maxlat="64.132477948" maxlon="-21.863574665"/>
+<wpt lat="64.129422661" lon="-21.863574665">
+  <ele>23.197388</ele>
+  <name>001</name>
+  <cmt>21-SEP-08 20:05:03</cmt>
+  <desc>21-SEP-08 20:05:03</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.132477948" lon="-21.872018594">
+  <ele>24.398926</ele>
+  <name>002</name>
+  <cmt>21-SEP-08 20:08:15</cmt>
+  <desc>21-SEP-08 20:08:15</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.129104149" lon="-21.863750350">
+  <ele>21.755371</ele>
+  <name>003</name>
+  <cmt>21-SEP-08 20:11:02</cmt>
+  <desc>21-SEP-08 20:11:02</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.129112950" lon="-21.870770445">
+  <ele>28.244263</ele>
+  <name>004</name>
+  <cmt>21-SEP-08 20:12:36</cmt>
+  <desc>21-SEP-08 20:12:36</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.129213365" lon="-21.870571962">
+  <ele>24.639282</ele>
+  <name>005</name>
+  <cmt>21-SEP-08 20:12:53</cmt>
+  <desc>21-SEP-08 20:12:53</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.130158257" lon="-21.869870145">
+  <ele>21.755371</ele>
+  <name>006</name>
+  <cmt>21-SEP-08 20:13:23</cmt>
+  <desc>21-SEP-08 20:13:23</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.130233778" lon="-21.869815579">
+  <ele>22.235962</ele>
+  <name>007</name>
+  <cmt>21-SEP-08 20:13:27</cmt>
+  <desc>21-SEP-08 20:13:27</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.130266635" lon="-21.869859248">
+  <ele>21.755371</ele>
+  <name>008</name>
+  <cmt>21-SEP-08 20:13:29</cmt>
+  <desc>21-SEP-08 20:13:29</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.130278872" lon="-21.869981205">
+  <ele>22.235962</ele>
+  <name>009</name>
+  <cmt>21-SEP-08 20:13:31</cmt>
+  <desc>21-SEP-08 20:13:31</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.130624626" lon="-21.869172016">
+  <ele>22.476318</ele>
+  <name>010</name>
+  <cmt>21-SEP-08 20:14:04</cmt>
+  <desc>21-SEP-08 20:14:04</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.130676677" lon="-21.869148882">
+  <ele>22.716675</ele>
+  <name>011</name>
+  <cmt>21-SEP-08 20:14:06</cmt>
+  <desc>21-SEP-08 20:14:06</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="64.130710037" lon="-21.869123317">
+  <ele>21.034424</ele>
+  <name>012</name>
+  <cmt>21-SEP-08 20:14:07</cmt>
+  <desc>21-SEP-08 20:14:07</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+</gpx>
