@@ -69,7 +69,10 @@ for my $src (@img) {
 
     my $dst = $src; $dst =~ s/\./-geo./;
     print "Saving $src with geodata as $dst, point offset by $best_key seconds\n";
-    $exif->WriteInfo($src, $dst);
+    unless ($exif->WriteInfo($src, $dst)) {
+        die "Failed to write a version of `$src` with exif data as `$dst': $!";
+    }
+
     system "mv -v $dst $src";
 }
 
