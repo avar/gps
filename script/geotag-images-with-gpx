@@ -5,7 +5,6 @@ use File::Slurp qw(slurp);
 use DateTime::Format::DateParse;
 use Image::ExifTool;
 use Image::ExifTool::Location;
-use Data::Dump 'dump';
 
 Getopt::Long::Parser->new(
     config => [ qw< bundling no_ignore_case no_require_order pass_through > ],
