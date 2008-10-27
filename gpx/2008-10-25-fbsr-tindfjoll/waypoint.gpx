@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+ version="1.0"
+creator="GPSBabel - http://www.gpsbabel.org"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2008-10-26T23:33:53Z</time>
+<bounds minlat="63.711241800" minlon="-20.666191299" maxlat="63.931037765" maxlon="-19.552381039"/>
+<wpt lat="63.757400522" lon="-19.696874404">
+  <ele>693.711914</ele>
+  <name>001</name>
+  <cmt>26-OCT-08 15:19:16</cmt>
+  <desc>26-OCT-08 15:19:16</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757367162" lon="-19.696859233">
+  <ele>697.076416</ele>
+  <name>002</name>
+  <cmt>26-OCT-08 15:19:20</cmt>
+  <desc>26-OCT-08 15:19:20</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757331036" lon="-19.696954368">
+  <ele>706.689453</ele>
+  <name>003</name>
+  <cmt>26-OCT-08 15:19:26</cmt>
+  <desc>26-OCT-08 15:19:26</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757361043" lon="-19.697004156">
+  <ele>705.487793</ele>
+  <name>004</name>
+  <cmt>26-OCT-08 15:19:31</cmt>
+  <desc>26-OCT-08 15:19:31</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757091062" lon="-19.698361773">
+  <ele>680.013184</ele>
+  <name>005</name>
+  <cmt>26-OCT-08 16:40:32</cmt>
+  <desc>26-OCT-08 16:40:32</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757130373" lon="-19.698399659">
+  <ele>680.493652</ele>
+  <name>006</name>
+  <cmt>26-OCT-08 16:40:35</cmt>
+  <desc>26-OCT-08 16:40:35</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757122830" lon="-19.698276864">
+  <ele>668.477539</ele>
+  <name>007</name>
+  <cmt>26-OCT-08 16:40:42</cmt>
+  <desc>26-OCT-08 16:40:42</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757057786" lon="-19.698168570">
+  <ele>681.214844</ele>
+  <name>008</name>
+  <cmt>26-OCT-08 16:40:49</cmt>
+  <desc>26-OCT-08 16:40:49</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757032305" lon="-19.698261023">
+  <ele>681.214844</ele>
+  <name>009</name>
+  <cmt>26-OCT-08 16:40:55</cmt>
+  <desc>26-OCT-08 16:40:55</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757077903" lon="-19.698317852">
+  <ele>682.896973</ele>
+  <name>010</name>
+  <cmt>26-OCT-08 16:41:03</cmt>
+  <desc>26-OCT-08 16:41:03</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757078908" lon="-19.698336795">
+  <ele>682.896973</ele>
+  <name>011</name>
+  <cmt>26-OCT-08 16:41:06</cmt>
+  <desc>26-OCT-08 16:41:06</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.719348358" lon="-19.723272538">
+  <ele>234.685791</ele>
+  <name>012</name>
+  <cmt>26-OCT-08 17:23:35</cmt>
+  <desc>26-OCT-08 17:23:35</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.714145208" lon="-19.725356949">
+  <ele>122.452637</ele>
+  <name>013</name>
+  <cmt>26-OCT-08 17:28:14</cmt>
+  <desc>26-OCT-08 17:28:14</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.711241800" lon="-19.734196672">
+  <ele>116.204224</ele>
+  <name>014</name>
+  <cmt>26-OCT-08 17:29:41</cmt>
+  <desc>26-OCT-08 17:29:41</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.712946931" lon="-19.736949876">
+  <ele>115.242920</ele>
+  <name>015</name>
+  <cmt>26-OCT-08 17:30:35</cmt>
+  <desc>26-OCT-08 17:30:35</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.713964997" lon="-19.819188332">
+  <ele>94.815063</ele>
+  <name>016</name>
+  <cmt>26-OCT-08 17:49:11</cmt>
+  <desc>26-OCT-08 17:49:11</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.713948652" lon="-19.819456972">
+  <ele>97.218262</ele>
+  <name>017</name>
+  <cmt>26-OCT-08 17:49:13</cmt>
+  <desc>26-OCT-08 17:49:13</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.716925066" lon="-19.894519430">
+  <ele>77.030884</ele>
+  <name>018</name>
+  <cmt>26-OCT-08 17:52:48</cmt>
+  <desc>26-OCT-08 17:52:48</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.716939231" lon="-19.894772982">
+  <ele>76.550171</ele>
+  <name>019</name>
+  <cmt>26-OCT-08 17:52:49</cmt>
+  <desc>26-OCT-08 17:52:49</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.723555906" lon="-19.956275616">
+  <ele>59.486816</ele>
+  <name>020</name>
+  <cmt>26-OCT-08 17:55:22</cmt>
+  <desc>26-OCT-08 17:55:22</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.723556325" lon="-19.956554146">
+  <ele>59.727173</ele>
+  <name>021</name>
+  <cmt>26-OCT-08 17:55:22</cmt>
+  <desc>26-OCT-08 17:55:22</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.776184199" lon="-20.280052107">
+  <ele>23.918335</ele>
+  <name>022</name>
+  <cmt>26-OCT-08 18:32:56</cmt>
+  <desc>26-OCT-08 18:32:56</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.777154991" lon="-20.281216102">
+  <ele>22.235962</ele>
+  <name>023</name>
+  <cmt>26-OCT-08 18:33:01</cmt>
+  <desc>26-OCT-08 18:33:01</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.793491656" lon="-20.307751112">
+  <ele>25.360229</ele>
+  <name>024</name>
+  <cmt>26-OCT-08 18:34:43</cmt>
+  <desc>26-OCT-08 18:34:43</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.793638423" lon="-20.308090830">
+  <ele>25.360229</ele>
+  <name>025</name>
+  <cmt>26-OCT-08 18:34:44</cmt>
+  <desc>26-OCT-08 18:34:44</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.820681712" lon="-20.356345698">
+  <ele>21.034424</ele>
+  <name>026</name>
+  <cmt>26-OCT-08 18:37:34</cmt>
+  <desc>26-OCT-08 18:37:34</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.820795454" lon="-20.356500093">
+  <ele>21.034424</ele>
+  <name>027</name>
+  <cmt>26-OCT-08 18:37:35</cmt>
+  <desc>26-OCT-08 18:37:35</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.835662855" lon="-20.403409330">
+  <ele>23.677979</ele>
+  <name>028</name>
+  <cmt>26-OCT-08 18:40:27</cmt>
+  <desc>26-OCT-08 18:40:27</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.836276159" lon="-20.404590843">
+  <ele>24.639282</ele>
+  <name>029</name>
+  <cmt>26-OCT-08 18:40:33</cmt>
+  <desc>26-OCT-08 18:40:33</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.863654891" lon="-20.441835998">
+  <ele>34.252441</ele>
+  <name>030</name>
+  <cmt>26-OCT-08 18:43:28</cmt>
+  <desc>26-OCT-08 18:43:28</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.863859326" lon="-20.442152498">
+  <ele>34.492798</ele>
+  <name>031</name>
+  <cmt>26-OCT-08 18:43:29</cmt>
+  <desc>26-OCT-08 18:43:29</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.928430825" lon="-20.663730036">
+  <ele>46.989868</ele>
+  <name>032</name>
+  <cmt>26-OCT-08 18:53:28</cmt>
+  <desc>26-OCT-08 18:53:28</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.930258248" lon="-20.665465258">
+  <ele>43.384766</ele>
+  <name>033</name>
+  <cmt>26-OCT-08 18:53:36</cmt>
+  <desc>26-OCT-08 18:53:36</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.744467665" lon="-19.719607383">
+  <ele>634.350830</ele>
+  <name>Back On Road</name>
+  <cmt>26-OCT-08 17:09:33</cmt>
+  <desc>26-OCT-08 17:09:33</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.776087556" lon="-19.606077354">
+  <name>Buri</name>
+  <cmt>25-OCT-08 17:05:47</cmt>
+  <desc>25-OCT-08 17:05:47</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.931037765" lon="-20.666191299">
+  <ele>43.384766</ele>
+  <name>Cattle Grid</name>
+  <cmt>26-OCT-08 18:53:40</cmt>
+  <desc>26-OCT-08 18:53:40</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.714146633" lon="-19.725511679">
+  <ele>121.731689</ele>
+  <name>Eford</name>
+  <cmt>26-OCT-08 17:28:17</cmt>
+  <desc>26-OCT-08 17:28:17</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.712999402" lon="-19.737017937">
+  <ele>114.521851</ele>
+  <name>Eford3</name>
+  <cmt>26-OCT-08 17:30:38</cmt>
+  <desc>26-OCT-08 17:30:38</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.711374151" lon="-19.734326508">
+  <ele>115.963867</ele>
+  <name>Efordh</name>
+  <cmt>26-OCT-08 17:29:45</cmt>
+  <desc>26-OCT-08 17:29:45</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.719308041" lon="-19.723297181">
+  <ele>235.887329</ele>
+  <name>Eobridge</name>
+  <cmt>26-OCT-08 17:23:37</cmt>
+  <desc>26-OCT-08 17:23:37</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.757322738" lon="-19.696967192">
+  <ele>707.650879</ele>
+  <name>Gamli</name>
+  <cmt>26-OCT-08 15:19:53</cmt>
+  <desc>26-OCT-08 15:19:53</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.716483256" lon="-19.716801457">
+  <ele>159.703613</ele>
+  <name>Gate</name>
+  <cmt>26-OCT-08 17:26:00</cmt>
+  <desc>26-OCT-08 17:26:00</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.778871521" lon="-19.642425729">
+  <name>Haki</name>
+  <cmt>26-OCT-08 10:06:27</cmt>
+  <desc>26-OCT-08 10:06:27</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.768374613" lon="-19.604959711">
+  <name>Hornklofi</name>
+  <cmt>25-OCT-08 17:06:32</cmt>
+  <desc>25-OCT-08 17:06:32</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.749692440" lon="-20.233790874">
+  <name>N1</name>
+  <cmt>N1</cmt>
+  <desc>N1</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.785140011" lon="-19.622193491">
+  <ele>1311.354248</ele>
+  <name>Saxi</name>
+  <cmt>25-OCT-08 16:26:18</cmt>
+  <desc>25-OCT-08 16:26:18</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.769438360" lon="-19.683432346">
+  <ele>814.115967</ele>
+  <name>Skali</name>
+  <cmt>26-OCT-08 12:57:13</cmt>
+  <desc>26-OCT-08 12:57:13</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.767541116" lon="-19.662092775">
+  <ele>926.108887</ele>
+  <name>Slasadir</name>
+  <cmt>26-OCT-08 12:35:16</cmt>
+  <desc>26-OCT-08 12:35:16</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.770702519" lon="-19.680926995">
+  <ele>1019.115723</ele>
+  <name>Start</name>
+  <cmt>25-OCT-08 13:22:37</cmt>
+  <desc>25-OCT-08 13:22:37</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.767416477" lon="-19.671900272">
+  <name>Steinar?</name>
+  <cmt>Steinar?</cmt>
+  <desc>Steinar?</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.763290653" lon="-19.661474442">
+  <name>Stora Blafell</name>
+  <cmt>26-OCT-08 11:00:10</cmt>
+  <desc>26-OCT-08 11:00:10</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.784303665" lon="-19.552381039">
+  <name>Yma</name>
+  <cmt>Yma</cmt>
+  <desc>Yma</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.786234856" lon="-19.566285610">
+  <name>Ymir</name>
+  <cmt>Ymir</cmt>
+  <desc>Ymir</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+</gpx>
