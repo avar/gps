@@ -9,6 +9,9 @@ opendir my $dir, $directory or die "Can't open dir `$directory': $!";
 my @file = sort grep { not /^\.{1,2}$/ } readdir $dir;
 closedir $dir;
 
+die "`out' directory already exists" if -d 'out';
+mkdir 'out' or die "Can't mkdir(out): $!";
+
 my @jpeg = grep { -f and /\.jpg$/i} @file;
 
 # Go through all the JPEG files and find the equivalent CR2 and UFRAW
@@ -32,8 +35,8 @@ for my $jpeg (@jpeg) {
     $cmd = "rm $name.rar";
     system $cmd and die "Command `$cmd' failed with code `$?'";
 
-    $cmd = "mv $jpeg.new $jpeg";
-    warn $cmd; # and die "Command `$cmd' failed with code `$?'";
+    $cmd = "mv $jpeg.new out/$jpeg";
+    system $cmd and die "Command `$cmd' failed with code `$?'";
 }
 
 
