@@ -15,6 +15,13 @@ geotag-images-with-gpx - Take arbitary number of gpx files and images and Exif t
 
     geotag-images-with-gpx [--range=RANGE] [--offset=OFFSET] [IMAGE AND GPX FILES..]
 
+    # Tag an image taken at 13:07:08 (according to the GPS) with a
+    # timestamp of 13:07:03 in its Exif data
+    geotag-images-with-gpx --offset=+5 track.gpx image.jpg
+
+    # Tag a whole directory of JPEG and RAW images
+    geotag-images-with-gpx --offset=+5 track.gpx *.cr2 *.jpg
+
 =head1 DESCRIPTION
 
 Takes an abitary number of GPX and image files on the command line and
