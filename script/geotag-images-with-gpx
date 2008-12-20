@@ -1,10 +1,67 @@
 #!/usr/bin/env perl
 use strict;
+use Pod::Usage ();
 use Getopt::Long ();
 use File::Slurp qw(slurp);
 use DateTime::Format::DateParse;
 use Image::ExifTool;
 use Image::ExifTool::Location;
+
+=head1 NAME
+
+geotag-images-with-gpx - Take arbitary number of gpx files and images and Exif tag the images with GPS points
+
+=head1 SYNOPSIS
+
+    geotag-images-with-gpx [--range=RANGE] [--offset=OFFSET] [IMAGE AND GPX FILES..]
+
+=head1 DESCRIPTION
+
+Takes an abitary number of GPX and image files on the command line and
+tags the image files with the GPX point found to be recorded closest
+in time to the time the image was taken.
+
+This program uses L<Image::ExifTool> and can tag any image format
+supported by that library, including F<CR2> and F<JPG> images.
+
+=head1 OPTIONS
+
+=over
+
+=item -h, --help
+
+Print a usage message listing all availible options
+
+=item --range
+
+For each image we process on the command line we'll search a given
+number of seconds back and forward in time and see if we can find a
+GPX point in that time period which will be used to tag the image.
+
+The closest point in time will then be used.
+
+60 by default.
+
+=item --offset
+
+How much needs to be added to your Camera's timestamp so that it syncs
+up with the GPS', obviously a negavite value can be specified.
+
+    $ exiftool *8289*jpg | grep ^Create
+    Create Date: 2008:07:30 13:07:03
+
+The image was actually taken at 13:07:08, so --offset=+5 needs to be
+specified.
+
+0 by default.
+
+=back
+
+=head1 AUTHOR
+
+E<AElig>var ArnfjE<ouml>rE<eth> Bjarmason <avar@f-prot.com>
+
+=cut
 
 Getopt::Long::Parser->new(
     config => [ qw< bundling no_ignore_case no_require_order pass_through > ],
@@ -15,6 +72,8 @@ Getopt::Long::Parser->new(
 ) or help();
 
 my (@gpx, @img);
+
+help() unless @ARGV;
 
 for (@ARGV) {
     if (/\.gpx$/i) {
@@ -84,6 +143,7 @@ sub get_points_from_gpx
     for my $gpx (@gpx) {
         my $cont = slurp($gpx);
 
+        # FIXME: Make a real XML parser
         my $rx = qr[
                        <trkpt\ lat="(.*?)"\ lon="(.*?)"> \s*
                        <ele>(.*?)</ele> \s*
@@ -112,16 +172,12 @@ sub get_points_from_gpx
     return %data;
 }
 
-__END__
+sub help
+{
+    my %arg = @_;
 
-=item --offset
-
-How much needs to be added to your Camera's timestamp so that it syncs
-up with the GPS', obviously a negavite value can be specified.
-
-    $ exiftool *8289*jpg | grep ^Create
-    Create Date: 2008:07:30 13:07:03
-
-The image was actually taken at 13:07:08, so --offset=+5 needs to be
-specified.
-
+    Pod::Usage::pod2usage(
+        -verbose => $arg{ verbose },
+        -exitval => $arg{ exitval } || 0,
+    );
+}
