@@ -52,7 +52,7 @@ The closest point in time will then be used.
 =item --offset
 
 How much needs to be added to your Camera's timestamp so that it syncs
-up with the GPS', obviously a negavite value can be specified.
+up with the GPS', obviously a negative value can be specified.
 
     $ exiftool *8289*jpg | grep ^Create
     Create Date: 2008:07:30 13:07:03
