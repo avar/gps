@@ -3,6 +3,7 @@ use Data::Dump 'dump';
 use XML::Parser ();
 use feature ':5.10';
 
+# FIXME: Don't make a real XML parser
 my $xml = XML::Parser->new(
     Handlers => {
         Start => \&handle_start,
