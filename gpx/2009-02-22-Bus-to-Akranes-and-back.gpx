@@ -321,12 +321,6 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/
   <desc>22-FEB-09 14:57:12</desc>
   <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="52.402483989" lon="12.892766353">
-  <name>Manon</name>
-  <cmt>22-FEB-09 20:03:52</cmt>
-  <desc>22-FEB-09 20:03:52</desc>
-  <sym>Flag, Blue</sym>
-</wpt>
 <wpt lat="64.308177559" lon="-22.094646804">
   <ele>15.026245</ele>
   <name>Mhafmeyjarsly</name>
