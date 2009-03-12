@@ -1,0 +1,25 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+
+#my $bjarki = 0;
+
+while (<>) {
+    chomp;
+    my $user = $_;
+
+    #if (!$bjarki && $user !~ /^Bjarki$/) {
+    #    next;
+    #} else {
+    #    $bjarki = 1;
+    #}
+
+    system qq[mkdir -p "out/$user"];
+    my @tracks = split /^/, qx[$^X get-osm-gpx-tracks-for-user --debug "$_"];
+
+    for my $track (@tracks) {
+        chomp $track;
+        my ($num) = $track =~ m[/trace/(\d+)/];
+        system qq[wget $track -O "out/$user/$num.gpx"];
+    }
+}
