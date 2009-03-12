@@ -46,9 +46,13 @@ $mech->get( $user_traces );
 
 my $num_pages = num_pages_from_links($mech);
 
+# Some users e.g. "Bjarki Sigursveinsson" or "oasnethuasonehuahu" will
+# show the public traces for *all* users
+exit 1 if $num_pages > 500;
+
 my %trace;
 for my $page (1 .. $num_pages) {
-    warn "page $page" if $debug;
+    warn "page $page for user $user" if $debug;
     $mech->get($user_traces . "/page/$page");
 
     my @gpx = gpx_tracks_on_page($mech);
