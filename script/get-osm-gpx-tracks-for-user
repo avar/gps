@@ -1,0 +1,124 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+
+use Pod::Usage ();
+use Getopt::Long ();
+
+use WWW::Mechanize;
+use URI::Escape;
+
+use File::Spec::Functions qw(catfile);
+
+=head1 NAME
+
+get-osm-gpx-tracks-for-user - Get all the F<.gpx> tracks a given L<openstreetmap.org> user has uploaded
+
+=head1 SYNOPSIS
+
+    perl -CA get-osm-gpx-tracks-for-user [--debug] "Ævar Arnfjörð Bjarmason"
+
+=cut
+
+Getopt::Long::Parser->new(
+    config => [ qw< bundling no_ignore_case no_require_order pass_through > ],
+)->getoptions(
+    'h|help' => \my $help,
+    'o|out-dir=s' => \my $out_dir,
+    'debug'       => \my $debug,
+) or help();
+
+help() if $help;
+
+#
+# main program
+#
+
+my $mech = WWW::Mechanize->new();
+
+my $user = $ARGV[0];
+my $user_esc =  uri_escape($user);
+my $user_traces = "http://openstreetmap.org/user/$user_esc/traces";
+
+warn "User traces: $user_traces" if $debug;
+
+$mech->get( $user_traces );
+
+my $num_pages = num_pages_from_links($mech);
+
+# Some users e.g. "Bjarki Sigursveinsson" or "oasnethuasonehuahu" will
+# show the public traces for *all* users
+exit 1 if $num_pages > 500;
+
+my %trace;
+for my $page (1 .. $num_pages) {
+    warn "page $page for user $user" if $debug;
+    $mech->get($user_traces . "/page/$page");
+
+    my @gpx = gpx_tracks_on_page($mech);
+
+    @trace{@gpx} = ();
+}
+
+get_traces($out_dir, sort { $a <=> $b } keys %trace);
+
+sub get_trace_links
+{
+    my @traces = @_;
+
+    map { "http://openstreetmap.org/trace/$_/data" } @traces
+}
+
+sub get_traces
+{
+    my ($dir, @traces) = @_;
+
+    my @trace_links = get_trace_links(@traces);
+
+    for my $link (@trace_links) {
+        print $link, "\n";
+    }
+}
+
+sub gpx_tracks_on_page
+{
+    my $mech = shift;
+    my @links = $mech->links;
+    my @gpx;
+
+    for my $link (@links) {
+        my $str_link = $link->url_abs;
+        # Argh, this needs to be stringfied to avoid evil magic
+        $str_link = "$str_link";
+        if ($str_link =~ m[/traces/([0-9]+)$]) {
+            push @gpx, $1;
+        }
+    }
+
+    return @gpx;
+}
+
+sub num_pages_from_links
+{
+    my $mech = shift;
+    my @links = $mech->links;
+    my $pages = 1;
+
+    for my $link (@links) {
+        next unless ($link->url_abs . "") =~ m[/page/([0-9]+)$];
+
+        $pages = $1 if $pages < $1;
+    }
+
+    return $pages;
+}
+
+sub help
+{
+    my %arg = @_;
+
+    Pod::Usage::pod2usage(
+        -verbose => $arg{ verbose },
+        -exitval => $arg{ exitval } || 0,
+    );
+}
