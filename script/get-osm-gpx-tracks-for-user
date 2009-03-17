@@ -16,7 +16,7 @@ get-osm-gpx-tracks-for-user - Get all the F<.gpx> tracks a given L<openstreetmap
 
 =head1 SYNOPSIS
 
-    perl -CA get-osm-gpx-tracks-for-user [--debug] "Ævar Arnfjörð Bjarmason"
+    perl get-osm-gpx-tracks-for-user [--debug] "Ævar Arnfjörð Bjarmason"
 
 =cut
 
