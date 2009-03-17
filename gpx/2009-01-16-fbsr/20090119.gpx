@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG190341</name>
+  <trkseg>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>426.692</ele>
+    <time>2009-01-19T19:03:41Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>426.676</ele>
+    <time>2009-01-19T19:03:42Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>426.550</ele>
+    <time>2009-01-19T19:03:43Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>426.359</ele>
+    <time>2009-01-19T19:03:44Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>426.502</ele>
+    <time>2009-01-19T19:03:45Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>426.330</ele>
+    <time>2009-01-19T19:03:46Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>426.621</ele>
+    <time>2009-01-19T19:03:47Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>426.177</ele>
+    <time>2009-01-19T19:03:48Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>426.621</ele>
+    <time>2009-01-19T19:03:49Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>425.926</ele>
+    <time>2009-01-19T19:03:50Z</time>
+   </trkpt>
+   <trkpt lat="64.131512" lon="-21.926767">
+    <ele>425.926</ele>
+    <time>2009-01-19T19:03:51Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>
