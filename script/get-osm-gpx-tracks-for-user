@@ -24,7 +24,6 @@ Getopt::Long::Parser->new(
     config => [ qw< bundling no_ignore_case no_require_order pass_through > ],
 )->getoptions(
     'h|help' => \my $help,
-    'o|out-dir=s' => \my $out_dir,
     'debug'       => \my $debug,
 ) or help();
 
@@ -50,52 +49,50 @@ my $num_pages = num_pages_from_links($mech);
 # show the public traces for *all* users
 exit 1 if $num_pages > 500;
 
-my %trace;
+my @links;
 for my $page (1 .. $num_pages) {
     warn "page $page for user $user" if $debug;
     $mech->get($user_traces . "/page/$page");
 
-    my @gpx = gpx_tracks_on_page($mech);
-
-    @trace{@gpx} = ();
+    push @links, gpx_links_on_page($mech);
 }
 
-get_traces($out_dir, sort { $a <=> $b } keys %trace);
-
-sub get_trace_links
-{
-    my @traces = @_;
-
-    map { "http://openstreetmap.org/trace/$_/data" } @traces
+for my $link (@links) {
+    #use Data::Dump 'dump';
+    #print dump $link;
+    printf "%s\t%s\t%s\n", @$link{qw(trace trace_url text)};
 }
 
-sub get_traces
-{
-    my ($dir, @traces) = @_;
+sub trace_name_from_content {
+    my $trace = shift;
+    my $content = shift;
 
-    my @trace_links = get_trace_links(@traces);
+    #<a href="/user/%C3%86var%20Arnfj%C3%B6r%C3%B0%20Bjarmason/traces/335388">2009_03_15_Driving_on_Highway_1_from_Akureyri_to_Reykjavik.gpx</a>
+    my ($name) = $content =~ m[<a href="/user/[^/]+/traces/$trace">(.+?\.gpx)</a>];
 
-    for my $link (@trace_links) {
-        print $link, "\n";
-    }
+    return $name;
 }
 
-sub gpx_tracks_on_page
+sub gpx_links_on_page
 {
     my $mech = shift;
     my @links = $mech->links;
-    my @gpx;
+    my @gpx_link;
 
     for my $link (@links) {
-        my $str_link = $link->url_abs;
-        # Argh, this needs to be stringfied to avoid evil magic
-        $str_link = "$str_link";
-        if ($str_link =~ m[/traces/([0-9]+)$]) {
-            push @gpx, $1;
+
+        if ($link->url_abs =~ m[/traces/([0-9]+)$]) {
+            push @gpx_link => {
+                url  => $link->url_abs,
+                text => trace_name_from_content($1, $mech->content),
+                trace => $1,
+                trace_url => "http://openstreetmap.org/trace/$1/data",
+            };
         }
+
     }
 
-    return @gpx;
+    return @gpx_link;
 }
 
 sub num_pages_from_links
