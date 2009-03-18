@@ -9,6 +9,8 @@ use WWW::Mechanize;
 use URI::Escape;
 
 use File::Spec::Functions qw(catfile);
+use File::Temp qw(tempfile);
+use Cwd qw(abs_path);
 
 =head1 NAME
 
@@ -23,11 +25,18 @@ get-osm-gpx-tracks-for-user - Get all the F<.gpx> tracks a given L<openstreetmap
 Getopt::Long::Parser->new(
     config => [ qw< bundling no_ignore_case no_require_order pass_through > ],
 )->getoptions(
-    'h|help' => \my $help,
-    'debug'       => \my $debug,
+    'h|help'     => \my $help,
+    'debug'      => \my $debug,
+    'out-dir=s'  => \my $out_dir,
+    'use-names!' => \my $use_names,
+    'download!'  => \my $download,
 ) or help();
 
 help() if $help;
+if ($download && !$out_dir or !$download && $out_dir) {
+    warn "--out-dir must be specified with --download";
+    help();
+}
 
 #
 # main program
@@ -57,10 +66,42 @@ for my $page (1 .. $num_pages) {
     push @links, gpx_links_on_page($mech);
 }
 
+if ($download) {
+    my $o_dir = abs_path($out_dir);
+    die "Couldn't resolve abs_path($out_dir)" unless $o_dir;
+
+    for my $link (@links) {
+        my ($trace, $trace_url, $text, $url) = @$link{qw(trace trace_url text url)};
+
+        warn "Getting trace `$trace' with the name `$text'" if $debug;
+
+        my $out_file = catfile($o_dir, $text);
+        download_track_url_to_file_and_ungzip($trace_url, $out_file);
+    }
+}
+
 for my $link (@links) {
     #use Data::Dump 'dump';
     #print dump $link;
     printf "%s\t%s\t%s\n", @$link{qw(trace trace_url text)};
+}
+
+sub download_track_url_to_file_and_ungzip
+{
+    my ($url, $file) = @_;
+    my ($t_fh, $t_filename) = tempfile();
+
+    system qq[wget -q $url -O $t_filename];
+    my $what = qx[file $t_filename];
+
+    if ($what =~ /gzip compressed data/) {
+        system qq[cat $t_filename | gzip -d > $file];
+        undef $t_fh;
+        undef $t_filename;
+        system qq[rm $t_filename];
+    } else {
+        system qq[mv $t_filename $file];
+    }
 }
 
 sub trace_name_from_content {
@@ -79,13 +120,18 @@ sub gpx_links_on_page
     my @links = $mech->links;
     my @gpx_link;
 
+    my %traces;
+
     for my $link (@links) {
 
         if ($link->url_abs =~ m[/traces/([0-9]+)$]) {
+            my $trace = $1;
+            next if $traces{$trace};
+            $traces{$trace} = 1;
             push @gpx_link => {
                 url  => $link->url_abs,
-                text => trace_name_from_content($1, $mech->content),
-                trace => $1,
+                text => trace_name_from_content($trace, $mech->content),
+                trace => $trace,
                 trace_url => "http://openstreetmap.org/trace/$1/data",
             };
         }
