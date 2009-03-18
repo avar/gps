@@ -92,6 +92,10 @@ if ($download) {
     my $o_dir = abs_path($out_dir);
     die "Couldn't resolve abs_path($out_dir)" unless $o_dir;
 
+    unless (-d $o_dir) {
+        mkdir $o_dir or die "Couldn't mkdir($o_dir): $!";
+    }
+
     for my $link (@links) {
         my ($trace, $trace_url, $text, $url) = @$link{qw(trace trace_url text url)};
 
@@ -116,9 +120,9 @@ sub download_track_url_to_file_and_ungzip
 
     if ($what =~ /gzip compressed data/) {
         system qq[cat $t_filename | gzip -d > $file];
+        system qq[rm $t_filename];
         undef $t_fh;
         undef $t_filename;
-        system qq[rm $t_filename];
     } else {
         system qq[mv $t_filename $file];
     }
