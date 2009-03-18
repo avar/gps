@@ -37,12 +37,12 @@ my %dir_two = dir_files_with_md5sum($dir_two);
 my @not_in_two = sort map { $dir_one{$_} } report_difference([keys %dir_one], [keys %dir_two]);
 my @not_in_one = sort map { $dir_two{$_} } report_difference([keys %dir_two], [keys %dir_one]);
 
-print "== Files in `$dir_two' not in `$dir_one':\n";
+print STDERR "== Files in `$dir_two' not in `$dir_one':\n";
 for my $not (@not_in_one) {
     print $not, "\n";
 }
 
-print "== Files in `$dir_one' not in `$dir_two':\n";
+print STDERR "== Files in `$dir_one' not in `$dir_two':\n";
 for my $not (@not_in_two) {
     print $not, "\n";
 }
