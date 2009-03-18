@@ -41,6 +41,11 @@ Download GPX traces, don't just display them, requires C<--out-dir>.
 The output directory (if using C<--download>), this need not be an
 absolute path as C<Cwd::abs_path()> will be called on it.
 
+=item --skip-existing, --no-skip-existing
+
+If C<--skip-existing> don't download traces in the C<--out-dir> we've
+already downloaded. C<--skip-existing> is the default.
+
 =back
 
 =cut
@@ -52,6 +57,7 @@ Getopt::Long::Parser->new(
     'debug'      => \my $debug,
     'out-dir=s'  => \my $out_dir,
     'download!'  => \my $download,
+    'skip-existing!' => \(my $skip_existing = 1),
 ) or help();
 
 help() if $help;
@@ -99,10 +105,14 @@ if ($download) {
     for my $link (@links) {
         my ($trace, $trace_url, $text, $url) = @$link{qw(trace trace_url text url)};
 
-        warn "Getting trace `$trace' with the name `$text'" if $debug;
-
         my $out_file = catfile($o_dir, $text);
-        download_track_url_to_file_and_ungzip($trace_url, $out_file);
+
+        if (-f $out_file && $skip_existing) {
+            warn "Skipping existing trace `$trace' with the name `$text'";
+        } else {
+            warn "Getting trace `$trace' with the name `$text'" if $debug;
+            download_track_url_to_file_and_ungzip($trace_url, $out_file);
+        }
     }
 } else {
     for my $link (@links) {
