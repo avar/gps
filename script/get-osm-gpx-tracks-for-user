@@ -20,6 +20,29 @@ get-osm-gpx-tracks-for-user - Get all the F<.gpx> tracks a given L<openstreetmap
 
     perl get-osm-gpx-tracks-for-user [--debug] "Ævar Arnfjörð Bjarmason"
 
+=head1 OPTIONS
+
+=over
+
+=item --help
+
+Display this help message
+
+=item --debug
+
+Print debugging information with C<warn>.
+
+=item --download
+
+Download GPX traces, don't just display them, requires C<--out-dir>.
+
+=item --out-dir
+
+The output directory (if using C<--download>), this need not be an
+absolute path as C<Cwd::abs_path()> will be called on it.
+
+=back
+
 =cut
 
 Getopt::Long::Parser->new(
@@ -28,7 +51,6 @@ Getopt::Long::Parser->new(
     'h|help'     => \my $help,
     'debug'      => \my $debug,
     'out-dir=s'  => \my $out_dir,
-    'use-names!' => \my $use_names,
     'download!'  => \my $download,
 ) or help();
 
@@ -78,12 +100,10 @@ if ($download) {
         my $out_file = catfile($o_dir, $text);
         download_track_url_to_file_and_ungzip($trace_url, $out_file);
     }
-}
-
-for my $link (@links) {
-    #use Data::Dump 'dump';
-    #print dump $link;
-    printf "%s\t%s\t%s\n", @$link{qw(trace trace_url text)};
+} else {
+    for my $link (@links) {
+        printf "%s\t%s\t%s\n", @$link{qw(trace trace_url text)};
+    }
 }
 
 sub download_track_url_to_file_and_ungzip
