@@ -21,6 +21,11 @@ for my $jpeg (@jpeg) {
 
     my @append = grep { /^$name\.(?i:cr2|ufraw)$/ } @file;
 
+    if (!@append) {
+        say "No cr2 or ufraw files for $jpeg, skipping";
+        next;
+    }
+
     $, = ",";
     say "$jpeg -> append @append";
 
