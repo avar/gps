@@ -62,6 +62,18 @@ specified.
 
 0 by default.
 
+=item --camera-time, --gps-time
+
+If you're too lazy to calculate the C<--offset> parameter yourself use these two, e.g.:
+
+    --camera-time=13:07:03 --gps-time=13:07:08
+
+instead of:
+
+    --offset=+5
+
+The offset will be calculated with L<DateTime::Format::DateParse>.
+
 =back
 
 =head1 AUTHOR
@@ -76,11 +88,27 @@ Getopt::Long::Parser->new(
     'h|help' => \my $help,
     'range=i' => \(my $range = 60),
     'offset=s' => \(my $offset = 0),
+    'camera-time=s' => \my $camera_time,
+    'gps-time=s' => \my $gps_time,
 ) or help();
 
 my (@gpx, @img);
 
 help() unless @ARGV;
+
+if ($camera_time && !$gps_time or $gps_time && !$camera_time) {
+    warn "Both --camera-time and --gps-time have to be specified";
+    help();
+}
+
+if ($offset && ($camera_time or $gps_time)) {
+    warn "--offset and --gps-time --camera-time are mutually exclusive";
+    help();
+}
+
+if ($camera_time and $gps_time) {
+    $offset = calculate_time_offset($camera_time, $gps_time);
+}
 
 for (@ARGV) {
     if (/\.gpx$/i) {
@@ -134,7 +162,7 @@ for my $src (@img) {
     $exif->SetElevation($best->{ele});
 
     my $dst = $src; $dst =~ s/\./-geo./;
-    print "Saving $src with geodata as $dst, point offset by $best_key seconds\n";
+    print "Saving $src with geodata as $dst, point offset by $best_key seconds with a constant offset of $offset\n";
     unless ($exif->WriteInfo($src, $dst)) {
         die "Failed to write a version of `$src` with exif data as `$dst': $!";
     }
@@ -177,6 +205,16 @@ sub get_points_from_gpx
     }
 
     return %data;
+}
+
+sub calculate_time_offset
+{
+    my ($camera_time, $gps_time) = @_;
+
+    my $cdt = DateTime::Format::DateParse->parse_datetime( $camera_time );
+    my $gdt = DateTime::Format::DateParse->parse_datetime( $gps_time );
+
+    return $gdt->epoch - $cdt->epoch;
 }
 
 sub help
