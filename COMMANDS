@@ -1,9 +1,13 @@
 # Track:
-gpsbabel -t -i garmin -f /dev/ttyUSB0 -o gpx -F waypoint.gpx
+gpsbabel -t -i garmin -f usb: -o gpx -F waypoint.gpx
 # Waypoint:
-gpsbabel -w -i garmin -f /dev/ttyUSB0 -o gpx -F waypoint.gpx
+gpsbabel -w -i garmin -f usb: -o gpx -F waypoint.gpx
 # Track/Waypoint:
-gpsbabel -t -w -i garmin -f /dev/ttyUSB0 -o gpx -F waypoint.gpx
+gpsbabel -t -w -i garmin -f usb: -o gpx -F waypoint.gpx
 
 # Filter:
-gpsbabel -t -w -i garmin -f /dev/ttyUSB0 -x track,start=2008072320 -o gpx -F waypoint.gpx 
+gpsbabel -t -w -i garmin -f usb: -x track,start=2008072320 -o gpx -F waypoint.gpx 
+
+# Merging tracks:
+gpsbabel -w -i garmin -f usb: -o gpx -F waypoint.gpx
+gpsbabel -t -w -i gpx -f waypoint.gpx -i gpx -f /media/disk/20090416.gpx -o gpx -F merged.gpx
