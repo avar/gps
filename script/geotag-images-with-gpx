@@ -88,9 +88,15 @@ Getopt::Long::Parser->new(
     'h|help' => \my $help,
     'range=i' => \(my $range = 60),
     'offset=s' => \(my $offset = 0),
+    'lat=s' => \my $lat,
+    'lon=s' => \my $lon,
+    'ele=s' => \my $ele,
     'camera-time=s' => \my $camera_time,
     'gps-time=s' => \my $gps_time,
 ) or help();
+
+# Manual tagging mode?
+my $manual = 0;
 
 my (@gpx, @img);
 
@@ -106,6 +112,15 @@ if ($offset && ($camera_time or $gps_time)) {
     help();
 }
 
+if ($lat or $lon or $ele) {
+    if (not (defined $lat and defined $lon and defined $ele)) {
+        warn "--lat --lon and --ele all have to be specified at once";
+        help();
+    }
+
+    $manual = 1;
+}
+
 if ($camera_time and $gps_time) {
     $offset = calculate_time_offset($camera_time, $gps_time);
 }
@@ -118,9 +133,12 @@ for (@ARGV) {
     }
 }
 
-print "Building point database from gpx files...";
-my %data = get_points_from_gpx(@gpx);
-print "done\n";
+my %data;
+unless ($manual) {
+    print "Building point database from gpx files...";
+    %data = get_points_from_gpx(@gpx);
+    print "done\n";
+}
 
 for my $src (@img) {
     my $exif = Image::ExifTool->new;
@@ -149,7 +167,15 @@ for my $src (@img) {
     }
 
     my $best_key = (sort { $a <=> $b } keys %diff)[0];
-    my $best = $diff{$best_key};
+    my $best;
+
+    unless ($manual) {
+        $best = $diff{$best_key};
+    } else {
+        $best->{lat} = $lat;
+        $best->{lon} = $lon;
+        $best->{ele} = $ele;
+    }
 
     unless ($best) {
         warn "Could not find a gps point within $range seconds for $src from the given gpx data";
@@ -162,9 +188,14 @@ for my $src (@img) {
     $exif->SetElevation($best->{ele});
 
     my $dst = $src; $dst =~ s/\./-geo./;
-    print "Saving $src with geodata as $dst, point offset by $best_key seconds with a constant offset of $offset\n";
+    print "Saving $src with geodata `$best->{lat}',`$best->{lon}':`$best->{ele}' as `$dst'";
+    unless ($manual) {
+        print ", point offset by $best_key seconds with a constant offset of $offset";
+    }
+    print "\n";
     unless ($exif->WriteInfo($src, $dst)) {
-        die "Failed to write a version of `$src` with exif data as `$dst': $!";
+        warn "Failed to write a version of `$src` with exif data as `$dst': $!";
+        sleep 2;
     }
 
     system "mv -v $dst $src";
