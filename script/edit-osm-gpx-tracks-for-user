@@ -1,0 +1,212 @@
+#!/usr/bin/env perl
+use feature ':5.10';
+use strict;
+use warnings;
+
+use Pod::Usage ();
+use Getopt::Long ();
+
+use WWW::Mechanize;
+use Data::Dump qw(dump);
+use Test::More qw(no_plan);
+
+=head1 NAME
+
+edit-osm-gpx-tracks-for-user - Mass-edit all the F<.gpx> tracks for a given user
+
+=head1 SYNOPSIS
+
+    # use --dry-run to see what the program would do without
+    # submitting anything!
+
+    # Set a track to identifiable
+    echo 123456 | perl -CA edit-osm-gpx-tracks-for-user --username="Ævar Arnfjörð Bjarmason" --password=cupcake --set-visibility=identifiable
+
+    # Set other values
+    echo 123456 | perl -CA edit-osm-gpx-tracks-for-user --username="Ævar Arnfjörð Bjarmason" --password=cupcake --set-description="A description" --set-tagstring="here, are, some, tags" --set-visibility=identifiable
+
+    # Mass-set tracks
+    perl get-osm-gpx-tracks-for-user "Ævar Arnfjörð Bjarmason" | awk '{print $1}' | perl -CA edit-osm-gpx-tracks-for-user [...]
+
+=head1 DESCRIPTION
+
+Takes a list of track id's on C<STDIN> and operates on them
+
+=head1 OPTIONS
+
+=over
+
+=item --help
+
+Display this help message
+
+=item --debug
+
+Print debugging information with C<warn>.
+
+=item --username
+
+The L<www.openstreetmap.org> username to use
+
+=item --password
+
+Password for your L<www.openstreetmap.org> username
+
+The output directory (if using C<--download>), this need not be an
+absolute path as C<Cwd::abs_path()> will be called on it.
+
+=item --set-description
+
+Set the description of all tracks to this string.
+
+=item --set-tagstring
+
+Set the tagstring of all tracks to this string.
+
+=item --set-visibility
+
+Set the visibility of all tracks to one of:
+
+=over
+
+=item
+
+private
+
+=item
+
+public
+
+=item
+
+trackable
+
+=item
+
+identifiable
+
+=back
+
+=item --dry-run
+
+Don't submit anything. Just show what would be done.
+
+=back
+
+=cut
+
+Getopt::Long::Parser->new(
+    config => [ qw< bundling no_ignore_case no_require_order pass_through > ],
+)->getoptions(
+    'h|help'     => \my $help,
+    'username=s'  => \my $username,
+    'password=s'  => \my $password,
+    'set-description=s' => \my $set_description,
+    'set-tagstring=s' => \my $set_tagstring,
+    'set-visibility=s' => \my $set_visibility,
+    'dry-run!' => \my $dry_run,
+) or help();
+
+help() if $help;
+
+my $mech = WWW::Mechanize->new();
+my $base = "http://openstreetmap.org/";
+
+# Get homepage
+$mech->get($base);
+ok($mech->success(), "Home page loaded successfully");
+
+# Go to login form
+$mech->follow_link( url_regex => qr/login/ );
+ok($mech->success(), "Now on login form");
+
+# Submit the login form
+$mech->form_number(1);
+$mech->field('user[email]', $username);
+$mech->field('user[password]', $password);
+$mech->submit();
+
+ok($mech->success(), "Login details submitted successfully");
+like($mech->content(), qr[<a href="/user/.*?/inbox"], "Page content indicates successful login");
+
+# Do stuff!
+my @traces = get_traces_from_fd(*STDIN);
+
+for my $trace (@traces) {
+    $mech->get($base . "trace/$trace/edit");
+    like($mech->content, qr[action="/trace/$trace/edit"], "Looking at the edit page for trace $trace");
+
+    my (%old, %new);
+
+    # Set the new data
+    $mech->form_number(1);
+
+    # Maybe set description
+    if ($set_description) {
+        $old{description} = $mech->current_form->value('trace[description]');
+        $new{description} = $set_description;
+
+        $mech->field('trace[description]', $set_description);
+
+        $new{description} = $mech->current_form->find_input('trace[description]')->value;
+
+        pass("Set description for trace $trace to '$new{description}', was '$old{description}'");
+    }
+
+    # Maybe set tagstring
+    if ($set_tagstring) {
+        $old{tagstring} = $mech->current_form->value('trace[tagstring]');
+
+        $mech->field('trace[tagstring]', $set_tagstring);
+
+        $new{tagstring} = $mech->current_form->find_input('trace[tagstring]')->value;
+
+        pass("Set tagstring for trace $trace to '$new{tagstring}', was '$old{tagstring}'");
+    }
+
+    # Maybe set visibility
+    if ($set_visibility) {
+        my $visibility = $mech->current_form->find_input('trace[visibility]');
+        my @possible_values = $visibility->possible_values;
+
+        $old{visibility} = $visibility->value;
+        $new{visibility} = $set_visibility;
+
+        # Sanity check
+        unless (scalar grep { $_ eq $new{visibility} } @possible_values) {
+            die "New value '$new{visibility}' is invalid. Possible values are: @possible_values" 
+        }
+
+        $mech->field('trace[visibility]', $set_visibility);
+        pass("Set visibility for trace $trace to '$new{visibility}', was '$old{visibility}'");
+    }
+
+    if ($dry_run) {
+        fail("Not submitting form for trace $trace under --dry-run");
+    } else {
+        $mech->click();
+        ok($mech->success(), "Submitted form for trace $trace");
+    }
+}
+
+sub get_traces_from_fd
+{
+    my $fd = shift;
+    my @traces;
+
+    unless (-t $fd) {
+        @traces = grep { /^[0-9]+$/ } map { chomp; $_ } <$fd>;
+    }
+
+    @traces;
+}
+
+sub help
+{
+    my %arg = @_;
+
+    Pod::Usage::pod2usage(
+        -verbose => $arg{ verbose },
+        -exitval => $arg{ exitval } || 0,
+    );
+}
