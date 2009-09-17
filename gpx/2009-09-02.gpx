@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG182753</name>
+  <trkseg>
+   <trkpt lat="38.038178" lon="23.819869">
+    <ele>205.924</ele>
+    <time>2009-09-02T15:27:53Z</time>
+   </trkpt>
+   <trkpt lat="38.038178" lon="23.819869">
+    <ele>207.250</ele>
+    <time>2009-09-02T15:27:54Z</time>
+   </trkpt>
+   <trkpt lat="38.038178" lon="23.819869">
+    <ele>207.250</ele>
+    <time>2009-09-02T15:27:55Z</time>
+   </trkpt>
+   <trkpt lat="38.038178" lon="23.819869">
+    <ele>206.812</ele>
+    <time>2009-09-02T15:27:56Z</time>
+   </trkpt>
+   <trkpt lat="38.038178" lon="23.819869">
+    <ele>207.861</ele>
+    <time>2009-09-02T15:27:57Z</time>
+   </trkpt>
+   <trkpt lat="38.038178" lon="23.819869">
+    <ele>206.989</ele>
+    <time>2009-09-02T15:27:58Z</time>
+   </trkpt>
+   <trkpt lat="38.038178" lon="23.819869">
+    <ele>206.439</ele>
+    <time>2009-09-02T15:27:59Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>
