@@ -95,6 +95,8 @@ Getopt::Long::Parser->new(
     'gps-time=s' => \my $gps_time,
 ) or help();
 
+help() if $help;
+
 # Manual tagging mode?
 my $manual = 0;
 
@@ -127,9 +129,9 @@ if ($camera_time and $gps_time) {
 
 for (@ARGV) {
     if (/\.gpx$/i) {
-        push @gpx, $_;
+        push @gpx, $_ if -f $_;
     } else {
-        push @img, $_;
+        push @img, $_ if -f $_;
     }
 }
 
@@ -147,6 +149,10 @@ for my $src (@img) {
     my $date = $exif->GetValue('CreateDate');
 
     my $dt = DateTime::Format::DateParse->parse_datetime( $date );
+    unless ($dt) {
+        warn "Couldn't parse date from '$src', date was '$date'";
+        next;
+    }
     my $time = $dt->epoch;
 
     my $start = $time + $offset - $range;
