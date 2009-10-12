@@ -9,8 +9,10 @@ opendir my $dir, $directory or die "Can't open dir `$directory': $!";
 my @file = sort grep { not /^\.{1,2}$/ } readdir $dir;
 closedir $dir;
 
-die "`out' directory already exists" if -d 'out';
-mkdir 'out' or die "Can't mkdir(out): $!";
+if (-d 'out') {
+    say "`out' directory already exists!";
+    sleep 3;
+}
 
 my @jpeg = grep { -f and /\.jpg$/i} @file;
 
@@ -23,6 +25,11 @@ for my $jpeg (@jpeg) {
 
     if (!@append) {
         say "No cr2 or ufraw files for $jpeg, skipping";
+        next;
+    }
+
+    if (-f "out/$jpeg") {
+        say "out/$jpeg already exists";
         next;
     }
 
