@@ -12,6 +12,8 @@ closedir $dir;
 if (-d 'out') {
     say "`out' directory already exists!";
     sleep 3;
+} else {
+    mkdir 'out' or die "Can't create 'out': $!";
 }
 
 my @jpeg = grep { -f and /\.jpg$/i} @file;
