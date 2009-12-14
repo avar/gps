@@ -19,6 +19,9 @@ diff-gpx-directories - meh
     perl get-osm-gpx-tracks-for-user --debug --out-dir=tmp --download "Ævar Arnfjörð Bjarmason"
     perl diff-gpx-directories ~/src/gps/gpx tmp/
 
+    # or:
+    perl script/get-osm-gpx-tracks-for-user --debug --out-dir=/tmp/osm-gpx --download "Ævar Arnfjörð Bjarmason" && perl script/diff-gpx-directories ~/src/gps/gpx /tmp/osm-gpx
+
 =cut
 
 Getopt::Long::Parser->new(
