@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG025437</name>
+  <trkseg>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>134.713</ele>
+    <time>2010-03-15T02:54:37Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+ <trk>
+  <name>ACTIVE LOG034650</name>
+  <trkseg>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>131.709</ele>
+    <time>2010-03-15T03:46:45Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>131.709</ele>
+    <time>2010-03-15T03:46:50Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>130.850</ele>
+    <time>2010-03-15T03:46:59Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>132.224</ele>
+    <time>2010-03-15T03:47:02Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+ <trk>
+  <name>ACTIVE LOG034705</name>
+  <trkseg>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>131.902</ele>
+    <time>2010-03-15T03:47:05Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>129.349</ele>
+    <time>2010-03-15T03:47:13Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>130.874</ele>
+    <time>2010-03-15T03:47:14Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>129.962</ele>
+    <time>2010-03-15T03:47:21Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>131.297</ele>
+    <time>2010-03-15T03:47:22Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>132.454</ele>
+    <time>2010-03-15T03:47:25Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>130.882</ele>
+    <time>2010-03-15T03:47:26Z</time>
+   </trkpt>
+   <trkpt lat="48.004950" lon="7.826868">
+    <ele>132.008</ele>
+    <time>2010-03-15T03:47:39Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>
