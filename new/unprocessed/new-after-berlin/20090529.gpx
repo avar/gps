@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG113140</name>
+  <trkseg>
+   <trkpt lat="52.493653" lon="13.181802">
+    <ele>-70.238</ele>
+    <time>2009-05-29T11:31:40Z</time>
+   </trkpt>
+   <trkpt lat="52.493653" lon="13.181802">
+    <ele>-69.974</ele>
+    <time>2009-05-29T11:31:41Z</time>
+   </trkpt>
+   <trkpt lat="52.493653" lon="13.181802">
+    <ele>-69.905</ele>
+    <time>2009-05-29T11:31:42Z</time>
+   </trkpt>
+   <trkpt lat="52.493653" lon="13.181802">
+    <ele>-69.942</ele>
+    <time>2009-05-29T11:31:43Z</time>
+   </trkpt>
+   <trkpt lat="52.493653" lon="13.181802">
+    <ele>-69.942</ele>
+    <time>2009-05-29T11:31:44Z</time>
+   </trkpt>
+   <trkpt lat="52.493653" lon="13.181802">
+    <ele>-69.942</ele>
+    <time>2009-05-29T11:31:45Z</time>
+   </trkpt>
+   <trkpt lat="52.493653" lon="13.181802">
+    <ele>-69.720</ele>
+    <time>2009-05-29T11:31:46Z</time>
+   </trkpt>
+   <trkpt lat="52.493653" lon="13.181802">
+    <ele>-70.312</ele>
+    <time>2009-05-29T11:31:47Z</time>
+   </trkpt>
+   <trkpt lat="52.493653" lon="13.181802">
+    <ele>-70.132</ele>
+    <time>2009-05-29T11:31:48Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

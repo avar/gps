@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+ version="1.0"
+creator="GPSBabel - http://www.gpsbabel.org"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2009-03-23T16:21:47Z</time>
+<bounds minlat="63.498160830" minlon="-19.513028171" maxlat="63.533903360" maxlon="-19.361247914"/>
+<wpt lat="63.522800105" lon="-19.505311707">
+  <ele>38.338013</ele>
+  <name>001</name>
+  <cmt>21-MAR-09 17:52:42</cmt>
+  <desc>21-MAR-09 17:52:42</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.522911081" lon="-19.505182458">
+  <ele>37.857300</ele>
+  <name>002</name>
+  <cmt>21-MAR-09 17:52:42</cmt>
+  <desc>21-MAR-09 17:52:42</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.532991493" lon="-19.368795566">
+  <ele>108.273438</ele>
+  <name>003</name>
+  <cmt>22-MAR-09 10:11:49</cmt>
+  <desc>22-MAR-09 10:11:49</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.533882573" lon="-19.361247914">
+  <ele>111.157349</ele>
+  <name>004</name>
+  <cmt>22-MAR-09 10:23:18</cmt>
+  <desc>22-MAR-09 10:23:18</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.532869034" lon="-19.369330583">
+  <ele>100.582886</ele>
+  <name>Bench</name>
+  <cmt>21-MAR-09 9:52:15</cmt>
+  <desc>21-MAR-09 9:52:15</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.533903360" lon="-19.361317735">
+  <ele>109.955688</ele>
+  <name>Bp1</name>
+  <cmt>21-MAR-09 17:17:54</cmt>
+  <desc>21-MAR-09 17:17:54</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.527932679" lon="-19.512861958">
+  <ele>31.849121</ele>
+  <name>Bup</name>
+  <cmt>21-MAR-09 17:54:00</cmt>
+  <desc>21-MAR-09 17:54:00</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.498160830" lon="-19.397389423">
+  <ele>54.439941</ele>
+  <name>Cg1</name>
+  <cmt>21-MAR-09 9:43:17</cmt>
+  <desc>21-MAR-09 9:43:17</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.524164427" lon="-19.504693625">
+  <ele>37.136353</ele>
+  <name>Cg3</name>
+  <cmt>21-MAR-09 17:53:02</cmt>
+  <desc>21-MAR-09 17:53:02</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.532882109" lon="-19.369289763">
+  <ele>110.196045</ele>
+  <name>Ep1</name>
+  <cmt>21-MAR-09 17:23:57</cmt>
+  <desc>21-MAR-09 17:23:57</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.532787813" lon="-19.369673403">
+  <ele>99.381226</ele>
+  <name>Er1</name>
+  <cmt>21-MAR-09 9:50:19</cmt>
+  <desc>21-MAR-09 9:50:19</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.529318376" lon="-19.513028171">
+  <ele>29.686279</ele>
+  <name>Er3</name>
+  <cmt>21-MAR-09 17:54:19</cmt>
+  <desc>21-MAR-09 17:54:19</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.499590950" lon="-19.396282006">
+  <ele>57.083496</ele>
+  <name>Oup</name>
+  <cmt>21-MAR-09 9:43:34</cmt>
+  <desc>21-MAR-09 9:43:34</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.533215793" lon="-19.363576910">
+  <ele>112.599243</ele>
+  <name>Pmarker</name>
+  <cmt>21-MAR-09 17:20:05</cmt>
+  <desc>21-MAR-09 17:20:05</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="63.532871129" lon="-19.369304851">
+  <ele>101.303833</ele>
+  <name>Tourinf</name>
+  <cmt>21-MAR-09 9:51:13</cmt>
+  <desc>21-MAR-09 9:51:13</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+</gpx>

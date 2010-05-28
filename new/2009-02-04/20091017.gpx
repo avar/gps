@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG152734</name>
+  <trkseg>
+   <trkpt lat="47.995473" lon="7.850484">
+    <ele>196.023</ele>
+    <time>2009-10-17T15:27:34Z</time>
+   </trkpt>
+   <trkpt lat="47.995473" lon="7.850484">
+    <ele>198.145</ele>
+    <time>2009-10-17T15:27:35Z</time>
+   </trkpt>
+   <trkpt lat="47.995473" lon="7.850484">
+    <ele>196.094</ele>
+    <time>2009-10-17T15:27:38Z</time>
+   </trkpt>
+   <trkpt lat="47.995473" lon="7.850484">
+    <ele>195.624</ele>
+    <time>2009-10-17T15:27:42Z</time>
+   </trkpt>
+   <trkpt lat="47.995473" lon="7.850484">
+    <ele>197.421</ele>
+    <time>2009-10-17T15:27:43Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+ <trk>
+  <name>ACTIVE LOG152934</name>
+  <trkseg>
+   <trkpt lat="48.004960" lon="7.826948">
+    <ele>195.238</ele>
+    <time>2009-10-17T15:29:34Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+ <trk>
+  <name>ACTIVE LOG153029</name>
+  <trkseg>
+   <trkpt lat="48.004739" lon="7.827035">
+    <ele>196.472</ele>
+    <time>2009-10-17T15:30:29Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+ <trk>
+  <name>ACTIVE LOG153110</name>
+  <trkseg>
+   <trkpt lat="48.004887" lon="7.826719">
+    <ele>196.673</ele>
+    <time>2009-10-17T15:31:10Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

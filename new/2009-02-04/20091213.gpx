@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG211639</name>
+  <trkseg>
+   <trkpt lat="48.004867" lon="7.826920">
+    <ele>256.815</ele>
+    <time>2009-12-13T21:16:39Z</time>
+   </trkpt>
+   <trkpt lat="48.004867" lon="7.826920">
+    <ele>257.092</ele>
+    <time>2009-12-13T21:16:44Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

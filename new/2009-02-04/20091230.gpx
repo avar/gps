@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG141957</name>
+  <trkseg>
+   <trkpt lat="65.674890" lon="-18.104032">
+    <ele>-62.966</ele>
+    <time>2009-12-30T14:19:57Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+ <trk>
+  <name>ACTIVE LOG142019</name>
+  <trkseg>
+   <trkpt lat="65.674890" lon="-18.104032">
+    <ele>-62.649</ele>
+    <time>2009-12-30T14:20:18Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

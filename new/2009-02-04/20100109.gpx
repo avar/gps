@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG020718</name>
+  <trkseg>
+   <trkpt lat="51.516353" lon="-0.172110">
+    <ele>54.590</ele>
+    <time>2010-01-09T02:07:18Z</time>
+   </trkpt>
+   <trkpt lat="51.516353" lon="-0.172110">
+    <ele>52.883</ele>
+    <time>2010-01-09T02:07:22Z</time>
+   </trkpt>
+   <trkpt lat="51.516353" lon="-0.172110">
+    <ele>55.433</ele>
+    <time>2010-01-09T02:07:23Z</time>
+   </trkpt>
+   <trkpt lat="51.516353" lon="-0.172110">
+    <ele>54.500</ele>
+    <time>2010-01-09T02:07:25Z</time>
+   </trkpt>
+   <trkpt lat="51.516353" lon="-0.172110">
+    <ele>56.350</ele>
+    <time>2010-01-09T02:07:27Z</time>
+   </trkpt>
+   <trkpt lat="51.516353" lon="-0.172110">
+    <ele>55.058</ele>
+    <time>2010-01-09T02:07:28Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

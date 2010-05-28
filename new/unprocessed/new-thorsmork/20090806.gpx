@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG123715</name>
+  <trkseg>
+   <trkpt lat="63.678230" lon="-19.460382">
+    <ele>170.260</ele>
+    <time>2009-08-06T12:37:15Z</time>
+   </trkpt>
+   <trkpt lat="63.678230" lon="-19.460382">
+    <ele>170.675</ele>
+    <time>2009-08-06T12:37:16Z</time>
+   </trkpt>
+   <trkpt lat="63.678230" lon="-19.460382">
+    <ele>170.768</ele>
+    <time>2009-08-06T12:37:17Z</time>
+   </trkpt>
+   <trkpt lat="63.678230" lon="-19.460382">
+    <ele>170.554</ele>
+    <time>2009-08-06T12:37:18Z</time>
+   </trkpt>
+   <trkpt lat="63.678230" lon="-19.460382">
+    <ele>170.691</ele>
+    <time>2009-08-06T12:37:19Z</time>
+   </trkpt>
+   <trkpt lat="63.678230" lon="-19.460382">
+    <ele>170.969</ele>
+    <time>2009-08-06T12:37:20Z</time>
+   </trkpt>
+   <trkpt lat="63.678230" lon="-19.460382">
+    <ele>170.969</ele>
+    <time>2009-08-06T12:37:21Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

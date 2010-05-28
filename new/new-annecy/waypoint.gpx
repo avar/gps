@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+  version="1.0"
+  creator="GPSBabel - http://www.gpsbabel.org"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.topografix.com/GPX/1/0"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2009-10-10T21:31:21Z</time>
+<bounds minlat="45.691779926" minlon="5.778829968" maxlat="48.004932404" maxlon="7.827029228"/>
+<wpt lat="45.920195673" lon="6.728083100">
+  <ele>617.287598</ele>
+  <name>001</name>
+  <cmt>07-OCT-09 16:34:01</cmt>
+  <desc>07-OCT-09 16:34:01</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.897942139" lon="6.800088678">
+  <ele>995.082764</ele>
+  <name>002</name>
+  <cmt>07-OCT-09 16:43:17</cmt>
+  <desc>07-OCT-09 16:43:17</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.903577376" lon="6.883063819">
+  <ele>2241.182373</ele>
+  <name>003</name>
+  <cmt>09-OCT-09 8:24:27</cmt>
+  <desc>09-OCT-09 8:24:27</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.907398770" lon="6.879652971">
+  <ele>2034.019531</ele>
+  <name>004</name>
+  <cmt>09-OCT-09 12:32:44</cmt>
+  <desc>09-OCT-09 12:32:44</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.931439241" lon="6.085077133">
+  <ele>457.950195</ele>
+  <name>005</name>
+  <cmt>09-OCT-09 16:57:06</cmt>
+  <desc>09-OCT-09 16:57:06</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.932880426" lon="6.086472720">
+  <ele>462.035889</ele>
+  <name>006</name>
+  <cmt>09-OCT-09 18:27:24</cmt>
+  <desc>09-OCT-09 18:27:24</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="46.209857566" lon="6.141347867">
+  <ele>424.544678</ele>
+  <name>16 Stop</name>
+  <cmt>04-OCT-09 15:17:25</cmt>
+  <desc>04-OCT-09 15:17:25</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.918001542" lon="6.088027479">
+  <ele>450.500122</ele>
+  <name>Adalstodin</name>
+  <cmt>06-OCT-09 6:42:15</cmt>
+  <desc>06-OCT-09 6:42:15</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.691779926" lon="5.908599934">
+  <ele>257.516968</ele>
+  <name>Aix Les Bains</name>
+  <cmt>03-OCT-09 20:04:15</cmt>
+  <desc>03-OCT-09 20:04:15</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="46.200059960" lon="6.167789921">
+  <ele>-0.114380</ele>
+  <name>Amandolier</name>
+  <cmt>03-OCT-09 13:55:18</cmt>
+  <desc>03-OCT-09 13:55:18</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="46.196699990" lon="6.231809976">
+  <ele>259.679932</ele>
+  <name>Annemasse</name>
+  <cmt>03-OCT-09 16:39:54</cmt>
+  <desc>03-OCT-09 16:39:54</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.905650640" lon="6.812488111">
+  <ele>1412.532227</ele>
+  <name>Ap3</name>
+  <cmt>08-OCT-09 15:12:26</cmt>
+  <desc>08-OCT-09 15:12:26</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.917275334" lon="6.092080381">
+  <ele>450.500122</ele>
+  <name>B01</name>
+  <cmt>06-OCT-09 5:46:02</cmt>
+  <desc>06-OCT-09 5:46:02</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.933130039" lon="6.085879030">
+  <ele>460.113281</ele>
+  <name>Bf5</name>
+  <cmt>09-OCT-09 16:54:36</cmt>
+  <desc>09-OCT-09 16:54:36</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.897529582" lon="6.131596025">
+  <ele>448.096924</ele>
+  <name>Bill</name>
+  <cmt>05-OCT-09 18:49:39</cmt>
+  <desc>05-OCT-09 18:49:39</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.924053444" lon="6.872423915">
+  <ele>1056.847168</ele>
+  <name>Billinn</name>
+  <cmt>08-OCT-09 15:36:17</cmt>
+  <desc>08-OCT-09 15:36:17</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.905502699" lon="6.810945673">
+  <ele>1398.112549</ele>
+  <name>Bp3</name>
+  <cmt>08-OCT-09 15:16:51</cmt>
+  <desc>08-OCT-09 15:16:51</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.904814797" lon="6.802237630">
+  <ele>1328.417236</ele>
+  <name>Bpav</name>
+  <cmt>08-OCT-09 15:18:22</cmt>
+  <desc>08-OCT-09 15:18:22</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.905955322" lon="6.814827668">
+  <ele>1425.509766</ele>
+  <name>Bpave</name>
+  <cmt>08-OCT-09 15:13:15</cmt>
+  <desc>08-OCT-09 15:13:15</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.897361021" lon="6.799749378">
+  <ele>985.950439</ele>
+  <name>Bs2</name>
+  <cmt>07-OCT-09 16:42:47</cmt>
+  <desc>07-OCT-09 16:42:47</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.917555122" lon="6.092792843">
+  <ele>450.740479</ele>
+  <name>Bst</name>
+  <cmt>06-OCT-09 5:50:59</cmt>
+  <desc>06-OCT-09 5:50:59</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.929141510" lon="6.083522793">
+  <ele>445.933960</ele>
+  <name>Buffalo Grill</name>
+  <cmt>05-OCT-09 17:09:06</cmt>
+  <desc>05-OCT-09 17:09:06</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.892367922" lon="6.116833230">
+  <ele>470.206909</ele>
+  <name>Car</name>
+  <cmt>10-OCT-09 12:27:22</cmt>
+  <desc>10-OCT-09 12:27:22</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.922629945" lon="6.874029972">
+  <ele>258.237915</ele>
+  <name>ChamoixMontBla</name>
+  <cmt>03-OCT-09 14:02:04</cmt>
+  <desc>03-OCT-09 14:02:04</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.843129940" lon="5.778829968">
+  <ele>259.920166</ele>
+  <name>Culoz</name>
+  <cmt>03-OCT-09 20:05:20</cmt>
+  <desc>03-OCT-09 20:05:20</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.917580938" lon="6.092861490">
+  <ele>452.663086</ele>
+  <name>E01</name>
+  <cmt>06-OCT-09 5:51:08</cmt>
+  <desc>06-OCT-09 5:51:08</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="46.200792789" lon="6.165218353">
+  <name>Eaux-Vives</name>
+  <cmt>Eaux-Vives</cmt>
+  <desc>Eaux-Vives</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.905536478" lon="6.812412757">
+  <ele>1411.570801</ele>
+  <name>Ef3</name>
+  <cmt>08-OCT-09 15:11:58</cmt>
+  <desc>08-OCT-09 15:11:58</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.905727753" lon="6.812501522">
+  <ele>1411.090088</ele>
+  <name>Egrav</name>
+  <cmt>08-OCT-09 15:16:35</cmt>
+  <desc>08-OCT-09 15:16:35</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.907245968" lon="6.821534280">
+  <ele>1495.685547</ele>
+  <name>Ep3</name>
+  <cmt>08-OCT-09 15:15:04</cmt>
+  <desc>08-OCT-09 15:15:04</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.905429022" lon="6.809986867">
+  <ele>1388.018555</ele>
+  <name>Epp</name>
+  <cmt>08-OCT-09 15:16:57</cmt>
+  <desc>08-OCT-09 15:16:57</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.936488835" lon="6.081767287">
+  <name>Espace Montagn</name>
+  <cmt>E</cmt>
+  <desc>E</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.917167543" lon="6.092109801">
+  <ele>450.259766</ele>
+  <name>Et1</name>
+  <cmt>06-OCT-09 5:46:14</cmt>
+  <desc>06-OCT-09 5:46:14</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.931099104" lon="6.084562987">
+  <ele>458.190552</ele>
+  <name>Et6</name>
+  <cmt>09-OCT-09 16:57:30</cmt>
+  <desc>09-OCT-09 16:57:30</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.927077131" lon="6.103865001">
+  <ele>462.997192</ele>
+  <name>Flug</name>
+  <cmt>07-OCT-09 7:28:15</cmt>
+  <desc>07-OCT-09 7:28:15</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.931098685" lon="6.089355508">
+  <ele>456.267944</ele>
+  <name>Fr7</name>
+  <cmt>10-OCT-09 17:05:19</cmt>
+  <desc>10-OCT-09 17:05:19</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.918299854" lon="6.087339241">
+  <ele>452.663086</ele>
+  <name>Fuel</name>
+  <cmt>07-OCT-09 6:31:19</cmt>
+  <desc>07-OCT-09 6:31:19</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.902059078" lon="6.121830940">
+  <name>Gare S.N.C.F.</name>
+  <cmt>Gare S.N.C.F.</cmt>
+  <desc>Gare S.N.C.F.</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.918184938" lon="6.088093193">
+  <ele>450.019531</ele>
+  <name>Gati</name>
+  <cmt>06-OCT-09 6:39:46</cmt>
+  <desc>06-OCT-09 6:39:46</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="46.210489981" lon="6.141989920">
+  <ele>261.602539</ele>
+  <name>GeneveCornavin</name>
+  <cmt>03-OCT-09 16:45:57</cmt>
+  <desc>03-OCT-09 16:45:57</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.936199911" lon="6.084269872">
+  <name>Go Sport</name>
+  <cmt>06-OCT-09 7:22:48</cmt>
+  <desc>06-OCT-09 7:22:48</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.935378904" lon="6.083422629">
+  <ele>454.345337</ele>
+  <name>GoSport</name>
+  <cmt>06-OCT-09 7:28:46</cmt>
+  <desc>06-OCT-09 7:28:46</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="48.004932404" lon="7.827029228">
+  <name>House</name>
+  <cmt>House</cmt>
+  <desc>House</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.934216334" lon="6.085626399">
+  <name>InterSport</name>
+  <cmt>06-OCT-09 7:22:05</cmt>
+  <desc>06-OCT-09 7:22:05</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="46.067449953" lon="6.303729974">
+  <ele>256.795898</ele>
+  <name>LaRocheSurForo</name>
+  <cmt>03-OCT-09 13:58:11</cmt>
+  <desc>03-OCT-09 13:58:11</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.906179957" lon="6.701429989">
+  <ele>260.400879</ele>
+  <name>Le Fayet</name>
+  <cmt>03-OCT-09 16:41:01</cmt>
+  <desc>03-OCT-09 16:41:01</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.901332619" lon="6.126902075">
+  <ele>450.740479</ele>
+  <name>Le Smash</name>
+  <cmt>06-OCT-09 17:15:23</cmt>
+  <desc>06-OCT-09 17:15:23</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.916961180" lon="6.092157830">
+  <ele>452.182373</ele>
+  <name>LeQUArtDeCERCL</name>
+  <cmt>E</cmt>
+  <desc>E</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.906457901" lon="6.128633022">
+  <name>Lycée Bertholt</name>
+  <cmt>Lycée Bertholt</cmt>
+  <desc>Lycée Bertholt</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.904197972" lon="6.799297426">
+  <ele>1265.211182</ele>
+  <name>M03</name>
+  <cmt>08-OCT-09 15:19:21</cmt>
+  <desc>08-OCT-09 15:19:21</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="46.105859941" lon="7.078319918">
+  <ele>257.997559</ele>
+  <name>Martigny</name>
+  <cmt>03-OCT-09 16:35:33</cmt>
+  <desc>03-OCT-09 16:35:33</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.907741925" lon="6.822016574">
+  <ele>1504.818115</ele>
+  <name>P03</name>
+  <cmt>08-OCT-09 15:14:34</cmt>
+  <desc>08-OCT-09 15:14:34</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.904502571" lon="6.186698908">
+  <ele>1066.219727</ele>
+  <name>Park</name>
+  <cmt>07-OCT-09 8:25:59</cmt>
+  <desc>07-OCT-09 8:25:59</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.898107933" lon="6.127954423">
+  <ele>458.911499</ele>
+  <name>Pub</name>
+  <cmt>05-OCT-09 19:52:43</cmt>
+  <desc>05-OCT-09 19:52:43</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.930851083" lon="6.090038382">
+  <ele>457.709961</ele>
+  <name>S01</name>
+  <cmt>06-OCT-09 13:12:36</cmt>
+  <desc>06-OCT-09 13:12:36</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.901777279" lon="6.884677503">
+  <ele>2267.618408</ele>
+  <name>S04</name>
+  <cmt>09-OCT-09 8:25:34</cmt>
+  <desc>09-OCT-09 8:25:34</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.879435232" lon="6.886967104">
+  <ele>3716.794922</ele>
+  <name>Ss4</name>
+  <cmt>09-OCT-09 8:39:00</cmt>
+  <desc>09-OCT-09 8:39:00</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.879343115" lon="6.886947826">
+  <ele>3789.133301</ele>
+  <name>Sss</name>
+  <cmt>09-OCT-09 12:15:53</cmt>
+  <desc>09-OCT-09 12:15:53</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.917972708" lon="6.870213356">
+  <ele>1086.887939</ele>
+  <name>Stat</name>
+  <cmt>09-OCT-09 12:36:30</cmt>
+  <desc>09-OCT-09 12:36:30</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.931373108" lon="6.089448882">
+  <ele>455.787354</ele>
+  <name>Stodin</name>
+  <cmt>04-OCT-09 20:47:11</cmt>
+  <desc>04-OCT-09 20:47:11</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.900481520" lon="6.124971639">
+  <name>Toilet</name>
+  <cmt>05-OCT-09 19:08:44</cmt>
+  <desc>05-OCT-09 19:08:44</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="46.032339921" lon="6.932819970">
+  <ele>259.199219</ele>
+  <name>Vallorcine</name>
+  <cmt>03-OCT-09 16:38:07</cmt>
+  <desc>03-OCT-09 16:38:07</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+<wpt lat="45.905472692" lon="6.812078403">
+  <ele>1397.151367</ele>
+  <name>View</name>
+  <cmt>08-OCT-09 15:06:34</cmt>
+  <desc>08-OCT-09 15:06:34</desc>
+  <sym>Flag, Blue</sym>
+</wpt>
+</gpx>
