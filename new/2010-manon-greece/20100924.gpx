@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <name>ACTIVE LOG170058</name>
+  <trkseg>
+   <trkpt lat="38.038271" lon="23.819764">
+    <ele>337.530</ele>
+    <time>2010-09-24T17:00:58Z</time>
+   </trkpt>
+   <trkpt lat="38.038271" lon="23.819764">
+    <ele>337.208</ele>
+    <time>2010-09-24T17:01:27Z</time>
+   </trkpt>
+   <trkpt lat="38.038271" lon="23.819764">
+    <ele>335.043</ele>
+    <time>2010-09-24T17:01:28Z</time>
+   </trkpt>
+   <trkpt lat="38.038271" lon="23.819764">
+    <ele>340.244</ele>
+    <time>2010-09-24T17:01:29Z</time>
+   </trkpt>
+   <trkpt lat="38.038271" lon="23.819764">
+    <ele>337.239</ele>
+    <time>2010-09-24T17:01:30Z</time>
+   </trkpt>
+   <trkpt lat="38.038271" lon="23.819764">
+    <ele>338.436</ele>
+    <time>2010-09-24T17:02:14Z</time>
+   </trkpt>
+   <trkpt lat="38.038271" lon="23.819764">
+    <ele>337.139</ele>
+    <time>2010-09-24T17:02:15Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>
